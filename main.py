@@ -9,7 +9,7 @@ for line in file:
  for word in words:
   for puc in string.punctuation:
     word = word.replace(puc,"")
-  word = word.lower()
+    word = word.lower()
   if(word in word_count):
    word_count[word] = words.count(word)+1
   else:
